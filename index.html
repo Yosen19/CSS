@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Icon.png">
+</head>
+
+
+<body>
+
+    <div class="top">
+        <img class="responsive" src="Design2.png" draggable="false">
+        <p class="top1 ">Escape the Underworld</p>
+        <p class="top2">Beyond the Realm of Hades</p>
+    </div>
+    
+    <div class="menu">
+        <img class="responsive" src="Menu.png" draggable="false">
+        <p class="menu">Sign the pact!</p>
+        <form class="form">
+            <label for="Email">E-mail:</label><br>
+            <input type="email" id="E-mail" name="e-mail" placeholder="E-mail" required><br>
+            <label for="Password">Signature:</label><br>
+            <input type="password" id="Password" name="Password" placeholder="Signature" required><br>
+            <img class="visibility"  src="off.png" onclick="Show()" id="show"> 
+            
+            <script>
+                function Show() 
+                {
+                var x = document.getElementById("Password");
+                if (x.type === "password") 
+                {
+                    x.type = "text";
+                    show.src = "on.png";
+                } 
+                else 
+                {
+                    x.type = "password";
+                    show.src = "off.png";
+                }
+                }
+            </script>
+    
+            <label for="Confirm">Confirm Signature:</label><br>
+            <input type="password" id="Confirm" name="Confirm" placeholder="Confirm Signature" required><br>
+            <img class="visibility1"  src="off.png" onclick="Show1()" id="show1">
+            
+            <script>
+                function Show1() 
+                {
+                var a = document.getElementById("Confirm");
+                if (a.type === "password") 
+                {
+                    a.type = "text";
+                    show1.src = "on.png";
+                } 
+                else 
+                {
+                    a.type = "password";
+                    show1.src = "off.png";
+                }
+                }
+            </script>
+            <p class="terms">You agree to the <span style="text-decoration: underline;color: #bd3e3e;">terms</span> and <span style="text-decoration: underline;color: #bd3e3e;">conditions</span> of this compact upon continuation.</p>
+            
+            <input class="check1" type="checkbox" id="Check" name="checkbox">
+            <label class="check" for="Check">Remember Thyself</label><br>
+            <input class="button1" type="submit" value="Continue"> 
+            <img class="button" src="Button.png">
+        </form>
+    </div>
+
+    <div class="gallery">
+        <img class="responsive" src="Text Box.png">
+        <div class="gallerybg"></div>
+        <img class="responsive Zeus fade mySlides" src="Zeus.png">
+        <img class="responsive Poseidon fade mySlides" src="Poseidon.png">
+        <img class="responsive Athena fade mySlides" src="Athena.png">
+        <img class="responsive Aphrodite fade mySlides" src="Aphrodite.png">    
+        <img class="responsive Artemis fade mySlides" src="Artemis.png">
+        <img class="responsive Ares fade mySlides" src="Ares.png">
+        <img class="responsive Dionysus fade mySlides" src="Dionysus.png">
+        <img class="responsive Demeter fade mySlides" src="Demeter.png">
+        <img class="responsive Hermes fade mySlides" src="Hermes.png">
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 2000);
+            }
+        </script>
+
+        <p class="toggle name" style="left: 176px;">Zeus</p>
+        <p class="toggle name" style="left: 130px;">Poseidon</p>
+        <p class="toggle name" style="left: 145px;">Athena</p>
+        <p class="toggle name" style="left: 118px;">Aphrodite</p>
+        <p class="toggle name" style="left: 143px;">Artemis</p>
+        <p class="toggle name" style="left: 175px;">Ares</p>
+        <p class="toggle name" style="left: 130px;">Dionysus</p>
+        <p class="toggle name" style="left: 136px;">Demeter</p>
+        <p class="toggle name" style="left: 139px;">Hermes</p>
+
+        <script>
+            let text = 0;
+            Names();
+
+            function Names() {
+                let o;
+                let name = document.getElementsByClassName("toggle");
+                for (o= 0; o < name.length; o++) {
+                    name[o].style.display = "none";
+                }
+                text++;
+                if (text > name.length) {text = 1}
+                    name[text-1].style.display = "inline-block";
+                    setTimeout(Names, 2000);
+                }
+        </script>
+    
+        <p class="titles" style="top:110px;left: 10px;color: rgb(245, 255, 104);font-size: 71px;">God of the Sky and Thunder</p>
+        <p class="titles" style="top:110px;left: 125px;color: rgb(58, 255, 196);font-size: 96px;">God of the Sea</p>
+        <p class="titles" style="top:125px;left: 23px;color: rgb(239, 255, 8);font-size: 65px;">Goddess of Wisdom and strategic warfare</p>
+        <p class="titles" style="top:110px;left: 10px;color: rgb(255, 94, 215);font-size: 71px;">Goddess of Love and Beauty</p>
+        <p class="titles" style="top:140px;left: 87px;color: rgb(147, 247, 66);font-size: 78px;">Goddess of the Hunt</p>
+        <p class="titles" style="top:73px;left: 124px;color: #ff1717;font-size: 120px;">God of War</p>
+        <p class="titles" style="top:73px;left: 113px;color: rgb(203, 5, 221);font-size: 120px;">God of Wine</p>
+        <p class="titles" style="top:120px;left: 85px;color: rgb(151, 252, 255);font-size: 87px;">Goddess of Seasons</p>
+        <p class="titles" style="top:115px;left: 97px;color: rgb(255, 195, 31);font-size: 92px;">God of Swiftness</p>
+
+        <script>
+            let text1 = 0;
+            titles();
+
+            function titles() {
+                let u;
+                let title = document.getElementsByClassName("titles");
+                for (u= 0; u < title.length; u++) {
+                    title[u].style.display = "none";
+                }
+                text1++;
+                if (text1 > title.length) {text1 = 1}
+                    title[text1-1].style.display = "inline-block";
+                    setTimeout(titles, 2000);
+                }
+        </script>
+    </div>
+
+    <div class="bottom">
+        <img class="responsive" src="Design1.png" draggable="false">
+        <a class="facebook" href="https://www.facebook.com/supergiantgames/" target="_blank">
+            <img class="responsive" src="facebook.png">
+        </a>
+        <a class="youtube" href="https://www.youtube.com/supergiantgames" target="_blank">
+            <img class="responsive" src="youtube.png">
+        </a>
+        <a class="twitter" href="https://www.twitter.com/supergiantgames" target="_blank">
+            <img class="responsive" src="twitter.png">
+        </a>
+        <a class="instagram" href="https://www.instagram.com/supergiantgames" target="_blank">
+            <img class="responsive" src="instagram.png">
+        </a>
+        <a class="supergiant" href="https://www.supergiantgames.com/" target="_blank">
+            <img class="responsive" src="supergiant.png">
+        </a>
+    </div>
+    
+</body>
+</html>

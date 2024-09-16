@@ -1,0 +1,396 @@
+@font-face {
+    font-family: 'Ceaser';
+    src: url(CaesarDressing-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Algreya';
+    src: url(alegreya-sc.regular.ttf);
+}
+
+@font-face {
+    font-family: 'Crimson';
+    src: url(CrimsonText-Roman.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(UbuntuMono-Regular.ttf);
+}
+
+* {  
+    box-sizing: border-box;
+    cursor: url(CursorDefault.png), default; 
+}
+
+.responsive, p, label, input{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+body::-webkit-scrollbar {
+    overflow-y: scroll;
+    display: none;
+}
+
+body {
+    background: url(Hades.png) fixed no-repeat center;
+    background-size: cover;
+    height: 100%;
+    animation: change 15s ease-in-out 2s infinite;
+    
+}
+
+@keyframes change {
+    10% {background-image: url(Hades.png);}
+    30% {background-image: url(Tartarus.png);}
+    50% {background-image: url(Asphodel.png);}
+    70% {background-image: url(Elysium.png);}
+    90% {background-image: url(Hades.png);}
+}
+
+.top {
+    position: relative;
+    left: 248px;
+    width: 1400px;
+}
+
+.top1 {
+    position: absolute;
+    top: -21px;
+    width: 100%;
+    font-family: 'Ceaser';
+    text-align: center;
+    letter-spacing: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+}
+
+.top2 {
+    position: absolute;
+    top: 64px;
+    width: 100%;
+    font-family: 'Ceaser';
+    text-align: center;
+    letter-spacing: 6px;
+    color: rgb(170, 170, 170);
+    font-size: 35px;
+}
+
+
+.menu{
+    position: relative;
+    margin-top: -40px;
+    margin-left: -25px;
+    width: 850px;
+}
+
+p.menu {
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    text-align: center;
+    text-shadow: 7px 7px 7px rgb(0, 0, 0);
+    font-family: 'Ceaser';
+    font-size: 82px;
+    font-weight: bold;
+    color: rgb(216, 216, 216);
+}
+
+.terms {
+    position: absolute;
+    top: 325px;
+    text-align: center;
+    
+    text-shadow: 7px 7px 7px rgb(0, 0, 0);
+    font-family: 'Algreya';
+    font-size: 20px;
+    color: rgb(170, 96, 96);
+}
+
+.form {
+    position: absolute;
+    top: 210px;
+    left: 247px;
+    text-shadow: 5px 5px 7px rgb(0, 0, 0);
+    font-family: 'Algreya';
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(216, 216, 216);
+}
+
+input[type=email], input[type=password], input[type=text] {
+    width: 370px;
+    height: 50px;
+    padding: 12px 20px;
+    margin-bottom: 18px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Algreya';
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 6px 6px;
+}
+
+input[type=email], input[type=password], input[type=text], input[type=submit]:focus {
+    outline: 0;
+}
+
+.visibility {
+    position: absolute;
+    width: 30px;
+    top: 147px;
+    left: 323px;
+    cursor: url(CursorDefaultPress.png), pointer; 
+}
+
+.visibility1 {
+    position: absolute;
+    width: 30px;
+    top: 249px;
+    left: 323px;
+    cursor: url(CursorDefaultPress.png), pointer; 
+}
+
+.check {
+    position: absolute;
+    font-size: 19px;
+    top: 299px;
+    left: 28px;
+}
+
+.check1 {
+    position: absolute;
+    top: 300px;
+    cursor: url(CursorDefaultPress.png), pointer;
+    width: 18px;
+    height: 18px; 
+}
+
+.button {
+    position: absolute;
+    top: 420px;
+    left: 40px;
+    
+}
+
+input.button1 {
+    position: absolute;
+    top: 426px;
+    left: 85px;
+    background: transparent;
+    border-style: none;
+    text-align: center;
+    text-shadow: 7px 7px rgb(0, 0, 0);
+    font-family: 'Ceaser';
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(216, 216, 216);
+    z-index: 1;
+}
+
+input.button1:hover {
+    opacity: 0.6;
+    cursor: url(CursorDefaultPress.png), pointer; 
+}
+
+input.button1:active {
+    opacity: 0.9;
+    transform: translateY(3px);
+}
+
+.button:hover {
+    cursor: url(CursorDefaultPress.png), pointer; 
+}
+
+.gallery{
+    position: relative;
+    float: right;
+    margin-top: -390px;
+    margin-right: 100px;
+    width: 830px;
+}
+
+.gallerybg {
+    position: relative;
+    float: right;
+    margin-top: -790px;
+    margin-right: 60px;
+    width: 610px;
+    height: 500px;
+    background-color: black;
+    border-radius: 20px;
+    opacity: 0.3;
+    z-index: -2;
+}
+
+.Zeus {
+    position: relative;
+    float: right;
+    margin-top: -780px;
+    margin-right: 90px;
+    width: 500px;
+    z-index: -1;
+}
+
+.Poseidon {
+    position: relative;
+    float: right;
+    margin-top: -780px;
+    margin-right: 70px;
+    width: 580px;
+    z-index: -1;   
+}
+
+.Athena {
+    position: relative;
+    float: right;
+    margin-top: -780px;
+    margin-right: 70px;
+    width: 520px;
+    z-index: -1;
+}
+
+.Aphrodite {
+    position: relative;
+    float: right;
+    margin-top: -780px;
+    margin-right: 70px;
+    width: 590px;
+    z-index: -1; 
+}
+
+.Artemis{
+    position: relative;
+    float: right;
+    margin-top: -780px;
+    margin-right: 90px;
+    width: 660px;
+    z-index: -1;    
+}
+
+.Ares{
+    position: relative;
+    float: right;
+    margin-top: -780px;
+    margin-right: 70px;
+    width: 590px;
+    z-index: -1;
+}
+
+.Dionysus{
+    position: relative;
+    float: right;
+    margin-top: -780px;
+    margin-right: 20px;
+    width: 610px;
+    z-index: -1;
+}
+
+.Demeter{
+    position: relative;
+    float: right;
+    margin-top: -780px;
+    margin-right: 40px;
+    width: 610px;
+    z-index: -1;
+}
+
+.Hermes{
+    position: relative;
+    float: right;
+    margin-top: -780px;
+    margin-right: 40px;
+    width: 610px;
+    z-index: -1;
+}
+
+.name{
+    position: absolute;
+    top: 45px;
+    text-align: center;
+    text-shadow: 7px 7px rgb(0, 0, 0);
+    font-family: 'Ceaser';
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(216, 216, 216);
+}
+
+.titles {
+    position: absolute;
+    text-align: center;
+    text-shadow: 4px 4px 7px rgb(0, 0, 0);
+    font-family: 'Ceaser';
+    font-weight: bold;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: .5s;
+}
+  
+@keyframes fade {
+    0% {opacity: 1;} 
+    10% {opacity: 1;}
+}
+
+.bottom {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 49px;
+    width: 1800px;
+}
+
+a.facebook {
+    position: absolute;
+    width: 60px;
+    left: 615px;
+    top: 80px;
+}
+
+a.instagram {
+    position: absolute;
+    width: 60px;
+    left: 705px;
+    top: 80px;
+}
+
+a.supergiant {
+    position: absolute;
+    width: 240px;
+    left: 780px;
+    top: 80px;
+}
+
+a.twitter {
+    position: absolute;
+    width: 60px;
+    left: 1030px;
+    top: 80px;
+}
+
+a.youtube {
+    position: absolute;
+    width: 60px;
+    left: 1120px;
+    top: 80px;
+}
+
+.bottom a:hover {
+    opacity: 0.8;
+}
